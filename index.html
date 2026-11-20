@@ -248,8 +248,9 @@ h1 {
   }
 }
 
-/* عنوان التطوير في الإيستر إيج الأول: التبديل في الأماكن والألوان */
+/* عنوان التطوير في أعلى الإيستر إيج الأول: التبديل في الأماكن والألوان */
 .dv-card {
+  order: -1;
   border-radius: 10px;
   padding: 11px 13px;
   background: rgba(11, 26, 48, 0.88);
@@ -486,6 +487,14 @@ h1 {
 
       <!-- واجهة الـ Easter Egg الأول (تظهر فقط في الوضع السري) -->
       <div id="easterPanel" class="easter-panel" hidden>
+        <!-- عنوان التطوير في أعلى الإيستر إيج الأول: التبديل في الأماكن والألوان -->
+        <div class="dv-card">
+          <div class="dv-head">
+            <h2 id="dvTitle" class="dv-title">DEV تطوير</h2>
+          </div>
+          <div id="dvChips" class="dv-list"></div>
+        </div>
+
         <div class="easter-box easter-rgb">
           <p id="academyTitle" class="easter-txt">طلاب اكادمية المبرمج الصغير</p>
           <button id="academyBtn" type="button" class="easter-btn easter-btn-rgb" disabled>دخول الأكاديمية</button>
@@ -494,14 +503,6 @@ h1 {
         <div class="easter-box easter-school">
           <p id="schoolTitle" class="easter-txt">من مدرسه البصيليه الثانويه المشتركة</p>
           <button id="schoolBtn" type="button" class="easter-btn easter-btn-school" disabled>بوابة المدرسة</button>
-        </div>
-
-        <!-- عنوان التطوير في الإيستر إيج الأول: التبديل في الأماكن والألوان بدون العبارة -->
-        <div class="dv-card">
-          <div class="dv-head">
-            <h2 id="dvTitle" class="dv-title">DEV تطوير</h2>
-          </div>
-          <div id="dvChips" class="dv-list"></div>
         </div>
 
         <!-- الإيستر إيج الثاني (الطبقة الداخلية السرية) -->
